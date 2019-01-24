@@ -1,0 +1,12 @@
+<h2>nihao</h2>
+<% str="World" %>
+<%= "Hello #{@str}" %>
+<br />
+<a href="demo/index">index</a>
+<br />
+<%= link_to("index",{:controller=>'demo',:action=>'index'})%>
+<br />
+<% # 如果本页和跳转页面在同一个controller里，可以不用指定controller%>
+<%= link_to("index",{:action=>'index'})%>
+<br />
+<%= link_to("index with param",{:action=>'index',:id=>105,:erb=>'a7'})%>
